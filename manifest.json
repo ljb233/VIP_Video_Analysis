@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "VIP视频解析插件",
+  "version": "1.0",
+  "description": "将当前页面URL与指定API拼接后在新标签页打开",
+  "permissions": ["activeTab", "tabs"], 
+  "host_permissions": [ 
+    "https://jx.xmflv.com/*",
+    "https://jx.2s0.cn/*",
+    "https://jx.77flv.cc/*",
+    "http://jiexi42.qmbo.cn/*",
+    "http://www.jzmhtt.com/*",
+    "https://jx.playerjy.com/*"
+  ],
+  "action": { 
+    "default_popup": "popup.html", 
+    "default_icon": {
+      "16": "icons/16.ico",
+      "48": "icons/48.ico",
+      "128": "icons/128.ico"
+    }
+  },
+  "icons": { 
+    "16": "icons/16.ico",
+    "48": "icons/48.ico",
+    "128": "icons/128.ico"
+  }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIP视频解析</title>
+  <style>
+    body { width: 320px; padding: 15px; font-family: "微软雅黑", sans-serif; }
+    .container { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    h3 { margin-top: 0; color: #333; }
+    .current-url { background: #f5f5f5; padding: 10px; border-radius: 4px; margin-bottom: 15px; font-size: 12px; word-break: break-all; }
+    .api-option { display: flex; align-items: center; margin-bottom: 10px; cursor: pointer; }
+    .api-option input { margin-right: 8px; }
+    .api-name { font-weight: bold; color: #333; }
+    .api-url { font-size: 11px; color: #666; }
+    button { width: 100%; padding: 10px; background: #4285f4; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    button:hover { background: #2b65d9; }
+    .status { margin-top: 10px; padding: 10px; border-radius: 4px; display: none; }
+    .success { background: #e8f5e9; color: #2e7d32; }
+    .error { background: #ffebee; color: #b71c1c; }
+    /* 新增核心样式 */
+    .api-group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 固定两列 */
+      gap: 20px; /* 行列间距 */
+      margin-bottom: 20px;
+    }
+
+    .api-option {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 15px;
+      background: #f9f9f9;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+      transition: all 0.2s ease;
+    } 
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>VIP视频解析</h3>
+    <div class="current-url" id="currentUrl">正在获取当前URL...</div>
+    
+  <div class="api-group">
+      <h4>选择解析接口：</h4>
+  </div>
+    <div class="api-group">
+      <label class="api-option">
+        <input type="radio" name="api" value="api1" checked>
+        <div>
+          <div class="api-name">xmflv</div>
+          <!-- <div class="api-url">https://jx.xmflv.com/?url=</div> -->
+        </div>
+      </label>
+      <label class="api-option">
+        <input type="radio" name="api" value="api2">
+        <div>
+          <div class="api-name">2s0_Player</div>
+          <!-- <div class="api-url">https://jx.2s0.cn/player/?url=</div> -->
+        </div>
+      </label>
+      <label class="api-option">
+        <input type="radio" name="api" value="api3">
+        <div>
+          <div class="api-name">77FLV</div>
+          <!-- <div class="api-url">https://jx.77flv.cc/?url=</div> -->
+        </div>
+      </label>
+      <label class="api-option">
+        <input type="radio" name="api" value="api4">
+        <div>
+          <div class="api-name">qige</div>
+          <!-- <div class="api-url">http://jiexi42.qmbo.cn/jiexi/?url=</div> -->
+        </div>
+      </label>
+      <label class="api-option">
+        <input type="radio" name="api" value="api5">
+        <div>
+          <div class="api-name">lingdian</div>
+          <!-- <div class="api-url">http://www.jzmhtt.com/zdy/vip/?url=</div> -->
+        </div>
+      </label>
+      <label class="api-option">
+        <input type="radio" name="api" value="api6">
+        <div>
+          <div class="api-name">playJY</div>
+          <!-- <div class="api-url">https://jx.playerjy.com/?url=</div> -->
+        </div>
+      </label>
+    </div>
+    <button id="openBtn">解析</button>
+    <div class="status" id="status"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
