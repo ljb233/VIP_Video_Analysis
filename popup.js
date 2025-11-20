@@ -5,7 +5,9 @@ const APIS = {
   api3: 'https://jx.77flv.cc/?url=',
   api4: 'http://jiexi42.qmbo.cn/jiexi/?url=',
   api5: 'http://www.jzmhtt.com/zdy/vip/?url=',
-  api6: 'https://jx.playerjy.com/?url='
+  api6: 'https://jx.playerjy.com/?url=',
+  api7:'https://yparse.ik9.cc/index.php?url=',
+  api8:'https://www.ckplayer.vip/jiexi/?url='
 };
 
 // 获取DOM元素
