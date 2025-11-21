@@ -9,7 +9,7 @@
     .container { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
     h3 { margin-top: 0; color: #333; }
     .current-url { background: #f5f5f5; padding: 10px; border-radius: 4px; margin-bottom: 15px; font-size: 12px; word-break: break-all; }
-    .api-option { display: flex; align-items: center; margin-bottom: 10px; cursor: pointer; }
+    .api-option { display: flex; align-items: center; margin-bottom: 6px; cursor: pointer; }
     .api-option input { margin-right: 8px; }
     .api-name { font-weight: bold; color: #333; }
     .api-url { font-size: 11px; color: #666; }
@@ -21,16 +21,16 @@
     /* 新增核心样式 */
     .api-group {
       display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 固定3列 */
-      gap: 10px; /* 行列间距 */
-      margin-bottom: 20px;
+      grid-template-columns: repeat(2, 1fr); /* 固定3列 */
+      gap: 5px; /* 行列间距 */
+      margin-bottom: 10px;
     }
 
     .api-option {
       display: flex;
       flex-direction: column;
       gap: 4px;
-      padding: 10px;
+      padding: 6px;
       background: #f9f9f9;
       border-radius: 3px;
       box-shadow: 0 1px 2px rgba(0,0,0,0.08);
@@ -44,7 +44,7 @@
     <div class="current-url" id="currentUrl">正在获取当前URL...</div>
     
   <div class="api-group">
-      <h4>选择解析接口：</h4>
+      <h3>选择解析接口：</h3>
   </div>
     <div class="api-group">
       <label class="api-option">
@@ -101,6 +101,20 @@
         <div>
           <div class="api-name">ckplayer</div>
           <!-- <div class="api-url">https://www.ckplayer.vip/jiexi/?url=</div> -->
+        </div>
+      </label>
+      <label class="api-option">
+        <input type="radio" name="api" value="api9">
+        <div>
+          <div class="api-name">playm3u8</div>
+          <!-- <div class="api-url">https://www.playm3u8.cn/jiexi.php?url=</div> -->
+        </div>
+      </label>
+      <label class="api-option">
+        <input type="radio" name="api" value="api10">
+        <div>
+          <div class="api-name">pangu</div>
+          <!-- <div class="api-url">https://www.pangujiexi.com/jiexi/?url=</div> -->
         </div>
       </label>
     </div>

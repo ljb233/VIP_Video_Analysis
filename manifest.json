@@ -12,7 +12,9 @@
     "http://www.jzmhtt.com/*",
     "https://jx.playerjy.com/*",
     "https://yparse.ik9.cc/*",
-    "https://www.ckplayer.vip/*"
+    "https://www.ckplayer.vip/*",
+    "https://www.playm3u8.cn/*",
+    "https://www.pangujiexi.com/*"
   ],
   "action": { 
     "default_popup": "popup.html", 
